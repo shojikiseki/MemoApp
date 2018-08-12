@@ -34,6 +34,10 @@ export default class App extends React.Component {
           </View>
         </View>
 
+        <View style={styles.memoAddButton}>
+          <Text style={styles.memoAddButtonTitle}>+</Text>
+        </View>
+
       </View>
     );
   }
@@ -84,5 +88,25 @@ const styles = StyleSheet.create({
   memoDate: {
     fontSize: 12,
     color: '#a2a2a2',
+  },
+  memoAddButton: {
+    position: 'absolute',
+    bottom: 40,
+    right: 40,
+    height: 50,
+    width: 50,
+    backgroundColor: '#e31676',
+    borderRadius: 24,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+  },
+  memoAddButtonTitle: {
+    fontSize: 30,
+    lineHeight: 30,
+    color: '#fff',
   },
 });
