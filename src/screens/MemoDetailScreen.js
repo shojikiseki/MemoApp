@@ -6,11 +6,13 @@ import CircleButton from '../elements/CircleButton';
 class MemoDetailScreen extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <View>
           <View style={styles.memoHeader}>
-            <Text style={styles.memoHeaderTitle}>講座のアイデア</Text>
-            <Text style={styles.memoHeaderDate}>2018/08/13</Text>
+            <View>
+              <Text style={styles.memoHeaderTitle}>講座のアイデア</Text>
+              <Text style={styles.memoHeaderDate}>2018/08/13</Text>
+            </View>
           </View>
         </View>
 
@@ -18,21 +20,43 @@ class MemoDetailScreen extends React.Component {
           <Text>講座のアイデアです</Text>
         </View>
 
-        <CircleButton>+</CircleButton>
+        <CircleButton style={styles.editButton}>+</CircleButton>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  memoHadere: {
-
+  container: {
+    flex: 1,
+    width: '100%',
+  },
+  memoHeader: {
+    height: 100,
+    backgroundColor: '#17313C',
+    justifyContent: 'center',
+    padding: 11,
   },
   memoHeaderTitle: {
-
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 4,
   },
-  memoHederDate: {
-
+  memoHeaderDate: {
+    fontSize: 12,
+    color: '#fff',
+  },
+  memoContent: {
+    paddingTop: 30,
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingBottom: 20,
+    backgroundColor: '#fff',
+    flex: 1,
+  },
+  editButton: {
+    top: 75,
   },
 });
 
