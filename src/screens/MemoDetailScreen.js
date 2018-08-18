@@ -10,14 +10,25 @@ class MemoDetailScreen extends React.Component {
         <View>
           <View style={styles.memoHeader}>
             <View>
-              <Text style={styles.memoHeaderTitle}>講座のアイデア</Text>
-              <Text style={styles.memoHeaderDate}>2018/08/13</Text>
+              <Text style={styles.memoHeaderTitle}>プログラミングレッスン案</Text>
+              <Text style={styles.memoHeaderDate}>2018/08/18</Text>
             </View>
           </View>
         </View>
 
         <View style={styles.memoContent}>
-          <Text>講座のアイデアです</Text>
+          <Text>以下はレッスンの内容です。{'\n'}</Text>
+          <Text>
+            ・HTML, CSSの基礎{'\n'}
+            ・JavaScript, jQueryの基礎{'\n'}
+            ・PHP, MySQLの基礎{'\n'}
+            ・ネットワークについて{'\n'}
+            ・サーバーについて{'\n'}
+            ・オブジェクト指向について{'\n'}
+            ・WordPress{'\n'}
+            ・PHPフレームワーク{'\n'}
+            ・Webサービス構築{'\n'}
+          </Text>
         </View>
 
         <CircleButton color="white" style={styles.editButton}>+</CircleButton>

@@ -6,23 +6,23 @@ class MemoList extends React.Component {
     return (
       <View style={styles.memoList}>
         <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>hogahoga</Text>
-          <Text style={styles.memoDate}>hugahuga</Text>
+          <Text style={styles.memoTitle}>プログラミングレッスン案</Text>
+          <Text style={styles.memoDate}>2018/08/18</Text>
         </View>
 
         <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>hogahoga</Text>
-          <Text style={styles.memoDate}>hugahuga</Text>
+          <Text style={styles.memoTitle}>記事構成例</Text>
+          <Text style={styles.memoDate}>2018/08/15</Text>
         </View>
 
         <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>hogahoga</Text>
-          <Text style={styles.memoDate}>hugahuga</Text>
+          <Text style={styles.memoTitle}>Udemy購入履歴</Text>
+          <Text style={styles.memoDate}>2018/08/10</Text>
         </View>
 
         <View style={styles.memoListItem}>
-          <Text style={styles.memoTitle}>hogahoga</Text>
-          <Text style={styles.memoDate}>hugahuga</Text>
+          <Text style={styles.memoTitle}>メモテスト</Text>
+          <Text style={styles.memoDate}>2018/08/03</Text>
         </View>
       </View>
     );
