@@ -1,5 +1,11 @@
 import React from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableHighlight } from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableHighlight,
+  StyleSheet,
+} from 'react-native';
 
 class SignupScreen extends React.Component {
   render() {
