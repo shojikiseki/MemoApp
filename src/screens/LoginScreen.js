@@ -7,8 +7,12 @@ class LoginScreen extends React.Component {
     password: '',
   }
 
-  handleChangeText(text) {
-    this.setState({ email: text });
+  // eslint-disable-next-line
+  handleSubmit() {
+
+    // { this.props.navigation.navigate('Home');
+
+    // ログイン処理
   }
 
   render() {
@@ -20,10 +24,21 @@ class LoginScreen extends React.Component {
         <TextInput
           style={styles.input}
           value={this.state.email}
-          onChangeText={this.handleChangeText.bind(this)}
+          onChangeText={(text) => { this.setState({ email: text }); }}
+          autoCapitalize="none"
+          autoCorrect={false}
+          placeholder="email address"
         />
-        <TextInput style={styles.input} value={this.state.password} />
-        <TouchableHighlight style={styles.button} onPress={() => { this.props.navigation.navigate('Home'); }} underlayColor="#c70f66">
+        <TextInput
+          style={styles.input}
+          value={this.state.password}
+          onChangeText={(text) => { this.setState({ password: text }); }}
+          autoCapitalize="none"
+          autoCorrect={false}
+          placeholder="password"
+          secureTextEntry
+        />
+        <TouchableHighlight style={styles.button} onPress={this.handleSubmit.bind(this)}>
           <Text style={styles.buttonTitle}>ログインする</Text>
         </TouchableHighlight>
       </View>
